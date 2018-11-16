@@ -10,14 +10,19 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[      2848,         85]
-NotebookOptionsPosition[      2463,         70]
-NotebookOutlinePosition[      2894,         87]
-CellTagsIndexPosition[      2851,         84]
+NotebookDataLength[      4306,        119]
+NotebookOptionsPosition[      3620,        100]
+NotebookOutlinePosition[      4051,        117]
+CellTagsIndexPosition[      4008,        114]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+Cell["Run the cell below to initialize:", "Text",
+ CellChangeTimes->{{3.751367424866529*^9, 
+  3.751367432185857*^9}},ExpressionUUID->"aadaaa1b-6349-4bf1-8452-\
+9e3201a3e05a"],
+
 Cell[BoxData[{
  RowBox[{
   RowBox[{
@@ -34,8 +39,9 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{
    RowBox[{"nm", "[", 
-    RowBox[{"f_", ",", "x0_", ",", "steps_"}], "]"}], ":=", 
-   "\[IndentingNewLine]", 
+    RowBox[{"f_", ",", 
+     RowBox[{"x0_", "?", "NumberQ"}], ",", 
+     RowBox[{"steps_", "?", "NumberQ"}]}], "]"}], ":=", "\[IndentingNewLine]", 
    RowBox[{"Module", "[", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"{", 
@@ -58,6 +64,7 @@ Cell[BoxData[{
          RowBox[{"newtonNext", "[", 
           RowBox[{"f", ",", "x"}], "]"}]}], ";", 
         RowBox[{"i", "++"}]}]}], "]"}]}], "]"}]}], ";"}]}], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.558265932801849*^9, 3.558265963657576*^9}, {
    3.558266385757609*^9, 3.558266386162191*^9}, {3.558266511609171*^9, 
    3.558266512984063*^9}, 3.558267369873941*^9, {3.558267820817281*^9, 
@@ -65,8 +72,31 @@ Cell[BoxData[{
    3.719663460735921*^9, 3.719663474774959*^9}, {3.7196635410794277`*^9, 
    3.719663541542259*^9}, {3.719672136480771*^9, 3.7196721386693783`*^9}, {
    3.719672230465584*^9, 3.719672235784953*^9}, {3.751196061593978*^9, 
-   3.751196115433186*^9}},
- CellLabel->"In[11]:=",ExpressionUUID->"fbf78008-b962-4ad1-ae0e-01991a56bb86"]
+   3.751196115433186*^9}, {3.7513673478194838`*^9, 3.751367356314046*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"fbf78008-b962-4ad1-ae0e-01991a56bb86"],
+
+Cell["\<\
+Here\[CloseCurlyQuote]s an example of how to use nm. You \
+don\[CloseCurlyQuote]t need to explicitly define x0; it works the same if you \
+just plug in 0.5 (as in nm[ g, 0.5, 10] )\
+\>", "Text",
+ CellChangeTimes->{{3.7513674362899113`*^9, 
+  3.751367473321909*^9}},ExpressionUUID->"b32b44b4-d941-4298-86d3-\
+597c2d269cc6"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"g", "[", "x_", "]"}], " ", ":=", " ", 
+   RowBox[{
+    RowBox[{"Cos", "[", "x", "]"}], " ", "-", " ", "x"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"x0", " ", "=", " ", "0.5"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"nm", "[", 
+  RowBox[{"g", ",", "x0", " ", ",", " ", "10"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.751367360599463*^9, 3.751367408857892*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"ce88b444-72f4-46f6-a642-4bb667edd9f9"]
 },
 WindowSize->{740, 867},
 WindowMargins->{{35, Automatic}, {Automatic, 0}},
@@ -86,7 +116,11 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 1902, 48, 212, "Input",ExpressionUUID->"fbf78008-b962-4ad1-ae0e-01991a56bb86"]
+Cell[557, 20, 175, 3, 30, "Text",ExpressionUUID->"aadaaa1b-6349-4bf1-8452-9e3201a3e05a"],
+Cell[735, 25, 2037, 50, 194, "Input",ExpressionUUID->"fbf78008-b962-4ad1-ae0e-01991a56bb86",
+ InitializationCell->True],
+Cell[2775, 77, 332, 7, 48, "Text",ExpressionUUID->"b32b44b4-d941-4298-86d3-597c2d269cc6"],
+Cell[3110, 86, 506, 12, 73, "Input",ExpressionUUID->"ce88b444-72f4-46f6-a642-4bb667edd9f9"]
 }
 ]
 *)
