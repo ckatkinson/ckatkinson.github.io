@@ -1,0 +1,133 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3740,        125]
+NotebookOptionsPosition[      3406,        110]
+NotebookOutlinePosition[      3760,        126]
+CellTagsIndexPosition[      3717,        123]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"rsumL", "[", 
+   RowBox[{"f_", ",", "a_", ",", "b_", ",", "n_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"dx", " ", "=", " ", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"b", "-", "a"}], ")"}], "/", "n"}]}], "}"}], ",", 
+    RowBox[{"Sum", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"f", "[", 
+        RowBox[{"a", "+", 
+         RowBox[{"i", " ", "dx"}]}], "]"}], "dx"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", "0", ",", 
+        RowBox[{"n", "-", "1"}]}], "}"}]}], "]"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"rsumR", "[", 
+   RowBox[{"f_", ",", "a_", ",", "b_", ",", "n_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"dx", " ", "=", " ", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"b", "-", "a"}], ")"}], "/", "n"}]}], "}"}], ",", 
+    RowBox[{"Sum", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"f", "[", 
+        RowBox[{"a", "+", 
+         RowBox[{"i", " ", "dx"}]}], "]"}], "dx"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", "1", ",", "n"}], "}"}]}], "]"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"rsumM", "[", 
+   RowBox[{"f_", ",", "a_", ",", "b_", ",", "n_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"dx", " ", "=", " ", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"b", "-", "a"}], ")"}], "/", "n"}]}], "}"}], ",", 
+    RowBox[{"Sum", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"f", "[", 
+        RowBox[{"a", "+", 
+         RowBox[{"dx", "/", "2"}], "+", 
+         RowBox[{"i", " ", "dx"}]}], "]"}], "dx"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", "0", ",", 
+        RowBox[{"n", "-", "1"}]}], "}"}]}], "]"}]}], "]"}]}], "\n", 
+ RowBox[{
+  RowBox[{"rects", "[", 
+   RowBox[{"f_", ",", "a_", ",", "b_", ",", "n_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"dx", " ", "=", " ", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"b", "-", "a"}], ")"}], "/", "n"}]}], "}"}], ",", 
+    RowBox[{"Show", "[", 
+     RowBox[{
+      RowBox[{"DiscretePlot", "[", 
+       RowBox[{
+        RowBox[{"f", "[", "x", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "a", ",", "b", ",", "dx"}], "}"}], ",", 
+        RowBox[{"ExtentSize", "\[Rule]", "Right"}]}], "]"}], ",", 
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"f", "[", "x", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "a", ",", "b"}], "}"}]}], "]"}]}], "]"}]}], 
+   "]"}]}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.688295106633397*^9, 3.6882951141845093`*^9}, {
+   3.688295444117519*^9, 3.688295466405258*^9}, 
+   3.751712981660512*^9},ExpressionUUID->"28390a6b-2879-4c56-a154-\
+c411a52c5c96"]
+},
+WindowSize->{808, 911},
+WindowMargins->{{20, Automatic}, {Automatic, 44}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2844, 88, 152, "Input",ExpressionUUID->"28390a6b-2879-4c56-a154-c411a52c5c96",
+ InitializationCell->True]
+}
+]
+*)
+
