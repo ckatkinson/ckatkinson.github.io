@@ -1,0 +1,163 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      5006,        154]
+NotebookOptionsPosition[      4538,        133]
+NotebookOutlinePosition[      4876,        148]
+CellTagsIndexPosition[      4833,        145]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"r", "[", "t_", "]"}], "=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Cos", "[", "t", "]"}], ",", 
+    RowBox[{"Sin", "[", "t", "]"}], ",", 
+    RowBox[{"ArcTan", "[", "t", "]"}]}], "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"r", "'"}], "[", "t", "]"}]}], "Input",
+ CellChangeTimes->{{3.600380133056755*^9, 3.6003801358034687`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"Cos", "[", "t", "]"}], ",", 
+   RowBox[{"Sin", "[", "t", "]"}], ",", 
+   RowBox[{"ArcTan", "[", "t", "]"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.600380136559887*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", 
+    RowBox[{"Sin", "[", "t", "]"}]}], ",", 
+   RowBox[{"Cos", "[", "t", "]"}], ",", 
+   FractionBox["1", 
+    RowBox[{"1", "+", 
+     SuperscriptBox["t", "2"]}]]}], "}"}]], "Output",
+ CellChangeTimes->{3.600380138165455*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"ParametricPlot3D", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"r", "[", "t", "]"}], ",", 
+        RowBox[{
+         RowBox[{"r", "[", "s", "]"}], "+", 
+         RowBox[{"t", "*", 
+          RowBox[{
+           RowBox[{"r", "'"}], "[", "s", "]"}]}]}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", 
+        RowBox[{"-", "20"}], ",", "20"}], "}"}], ",", 
+      RowBox[{"PlotRange", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1.5"}], ",", "1.5"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1.5"}], ",", "1.5"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "Pi"}], "/", "2"}], ",", 
+           RowBox[{"Pi", "/", "2"}]}], "}"}]}], "}"}]}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"s", ",", 
+      RowBox[{"-", "20"}], ",", "20"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6003795224327593`*^9, 3.600379792075262*^9}, {
+  3.6003799898863697`*^9, 3.600380044350419*^9}, {3.600380102061405*^9, 
+  3.600380206451014*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`s$$ = -0.8669204711914062, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`s$$], -20, 20}}, Typeset`size$$ = {
+    360., {201., 204.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`s$8968$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`s$$ = -20}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`s$$, $CellContext`s$8968$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ParametricPlot3D[{
+         $CellContext`r[$CellContext`t], $CellContext`r[$CellContext`s$$] + \
+$CellContext`t 
+          Derivative[
+           1][$CellContext`r][$CellContext`s$$]}, {$CellContext`t, -20, 20}, 
+        PlotRange -> {{-1.5, 1.5}, {-1.5, 1.5}, {(-Pi)/2, Pi/2}}], 
+      "Specifications" :> {{$CellContext`s$$, -20, 20}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {255., 262.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.6003801885917377`*^9, 3.6003802181429367`*^9}}]
+}, Open  ]]
+},
+WindowSize->{640, 655},
+WindowMargins->{{Automatic, -24}, {Automatic, 25}},
+FrontEndVersion->"7.0 for Linux x86 (64-bit) (November 11, 2008)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 377, 10, 52, "Input"],
+Cell[947, 34, 221, 6, 31, "Output"],
+Cell[1171, 42, 281, 9, 44, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1489, 56, 1241, 36, 92, "Input"],
+Cell[2733, 94, 1789, 36, 534, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
