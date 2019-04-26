@@ -3,116 +3,14 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[     15187,        418]
-NotebookOptionsPosition[     14147,        390]
-NotebookOutlinePosition[     14611,        408]
-CellTagsIndexPosition[     14568,        405]
+NotebookDataLength[     11409,        312]
+NotebookOptionsPosition[     10743,        288]
+NotebookOutlinePosition[     11207,        306]
+CellTagsIndexPosition[     11164,        303]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell["Logistic:", "Text",
- CellChangeTimes->{{3.603189850027919*^9, 
-  3.603189851640868*^9}},ExpressionUUID->"3f443468-0657-4a6c-b7ba-\
-98b483bca87f"],
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"L", "[", 
-   RowBox[{"x_", ",", "t_"}], "]"}], "=", 
-  RowBox[{"k", " ", "x", " ", 
-   RowBox[{"(", 
-    RowBox[{"1", "-", 
-     RowBox[{"x", "/", "M"}]}], ")"}]}]}], "\n", 
- RowBox[{
-  RowBox[{"M", " ", "=", " ", "1000"}], ";", 
-  RowBox[{"k", "=", "0.08"}], ";"}], "\n", 
- RowBox[{"StreamPlot", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"1", ",", 
-     RowBox[{"L", "[", 
-      RowBox[{"P", ",", "t"}], "]"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"t", ",", "0", ",", "100"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"P", ",", "0", ",", "1200"}], "}"}], ",", 
-   RowBox[{"VectorScale", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{"Tiny", ",", "Tiny", ",", "None"}], "}"}]}], ",", 
-   RowBox[{"VectorStyle", "->", 
-    RowBox[{"Arrowheads", "[", "0.01", "]"}]}]}], "]"}], "\n", 
- RowBox[{
-  RowBox[{"A", "=", 
-   RowBox[{
-    RowBox[{"(", 
-     RowBox[{"M", "-", "P0"}], ")"}], "/", "P0"}]}], ";"}], "\n", 
- RowBox[{
-  RowBox[{"P0", "=", "100"}], ";"}], "\n", 
- RowBox[{
-  RowBox[{"P", "[", "x_", "]"}], "=", 
-  RowBox[{"M", "/", 
-   RowBox[{"(", 
-    RowBox[{"1", "+", 
-     RowBox[{"A", " ", 
-      RowBox[{"E", "^", 
-       RowBox[{"(", 
-        RowBox[{
-         RowBox[{"-", "k"}], " ", "x"}], ")"}]}]}]}], ")"}]}]}], "\n", 
- RowBox[{"Plot", "[", 
-  RowBox[{
-   RowBox[{"P", "[", "t", "]"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"t", ",", "0", ",", "100"}], "}"}]}], "]"}]}], "Input",
- CellChangeTimes->{{3.603189860164075*^9, 3.603189895376813*^9}, {
-   3.603190617829812*^9, 3.603190621453391*^9}, 3.765101196728656*^9, {
-   3.765274653338254*^9, 3.765274654696509*^9}},
- CellLabel->"In[53]:=",ExpressionUUID->"12f48f88-5db5-48cd-a7e8-ff1efe3bd31a"],
-
-Cell["With some hunting.  Population removed at a constant rate.", "Text",
- CellChangeTimes->{{3.603190577711314*^9, 3.603190580221397*^9}, {
-  3.603190653660119*^9, 
-  3.603190669883862*^9}},ExpressionUUID->"d58cc3a6-1ac5-4717-bf80-\
-4fe2e0670b53"],
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"H", "[", 
-   RowBox[{"x_", ",", "t_"}], "]"}], "=", 
-  RowBox[{
-   RowBox[{"L", "[", 
-    RowBox[{"x", ",", "t"}], "]"}], "-", "c"}]}], "\n", 
- RowBox[{
-  RowBox[{"c", "=", "15"}], ";", 
-  RowBox[{"M", "=", "1000"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{"StreamPlot", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"1", ",", 
-     RowBox[{"H", "[", 
-      RowBox[{"x", ",", "t"}], "]"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"t", ",", "0", ",", "100"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"x", ",", "0", ",", "1000"}], "}"}], ",", 
-   RowBox[{"VectorScale", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{"Tiny", ",", "Tiny", ",", "None"}], "}"}]}], ",", 
-   RowBox[{"VectorStyle", "->", 
-    RowBox[{"Arrowheads", "[", "0.01", "]"}]}]}], "]"}], "\n", 
- RowBox[{"DSolve", "[", 
-  RowBox[{
-   RowBox[{
-    RowBox[{
-     RowBox[{"x", "'"}], "[", "t", "]"}], "\[Equal]", 
-    RowBox[{"H", "[", 
-     RowBox[{
-      RowBox[{"x", "[", "t", "]"}], ",", "t"}], "]"}]}], ",", 
-   RowBox[{"x", "[", "t", "]"}], ",", "t"}], "]"}]}], "Input",
- CellChangeTimes->{{3.6031905836*^9, 3.603190600197701*^9}, {
-   3.60319063216894*^9, 3.603190642293302*^9}, 3.765101223960313*^9},
- CellLabel->"In[60]:=",ExpressionUUID->"8d75d4bb-123c-4cd3-929b-fecb6e031af6"],
-
 Cell["\<\
 Lotka-Volterra (The following code was written by Stephen Wilkerson.  See \
 http://demonstrations.wolfram.com/PredatorPreyModel/\
@@ -407,12 +305,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[400, 13, 151, 3, 29, "Text",ExpressionUUID->"3f443468-0657-4a6c-b7ba-98b483bca87f"],
-Cell[554, 18, 1702, 51, 168, "Input",ExpressionUUID->"12f48f88-5db5-48cd-a7e8-ff1efe3bd31a"],
-Cell[2259, 71, 249, 4, 29, "Text",ExpressionUUID->"d58cc3a6-1ac5-4717-bf80-4fe2e0670b53"],
-Cell[2511, 77, 1290, 36, 105, "Input",ExpressionUUID->"8d75d4bb-123c-4cd3-929b-fecb6e031af6"],
-Cell[3804, 115, 375, 7, 29, "Text",ExpressionUUID->"9718a9a9-e6f4-4653-989c-8f0635fc26a8"],
-Cell[4182, 124, 9961, 264, 714, "Input",ExpressionUUID->"d98bdcb3-3525-4850-83f7-0ab73e5659c9"]
+Cell[400, 13, 375, 7, 29, "Text",ExpressionUUID->"9718a9a9-e6f4-4653-989c-8f0635fc26a8"],
+Cell[778, 22, 9961, 264, 714, "Input",ExpressionUUID->"d98bdcb3-3525-4850-83f7-0ab73e5659c9"]
 }
 ]
 *)
