@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[     15137,        417]
-NotebookOptionsPosition[     14097,        389]
-NotebookOutlinePosition[     14561,        407]
-CellTagsIndexPosition[     14518,        404]
+NotebookDataLength[     15187,        418]
+NotebookOptionsPosition[     14147,        390]
+NotebookOutlinePosition[     14611,        408]
+CellTagsIndexPosition[     14568,        405]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -27,7 +27,7 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"M", " ", "=", " ", "1000"}], ";", 
   RowBox[{"k", "=", "0.08"}], ";"}], "\n", 
- RowBox[{"VectorPlot", "[", 
+ RowBox[{"StreamPlot", "[", 
   RowBox[{
    RowBox[{"{", 
     RowBox[{"1", ",", 
@@ -65,8 +65,9 @@ Cell[BoxData[{
    RowBox[{"{", 
     RowBox[{"t", ",", "0", ",", "100"}], "}"}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.603189860164075*^9, 3.603189895376813*^9}, {
-   3.603190617829812*^9, 3.603190621453391*^9}, 3.765101196728656*^9},
- CellLabel->"In[64]:=",ExpressionUUID->"12f48f88-5db5-48cd-a7e8-ff1efe3bd31a"],
+   3.603190617829812*^9, 3.603190621453391*^9}, 3.765101196728656*^9, {
+   3.765274653338254*^9, 3.765274654696509*^9}},
+ CellLabel->"In[53]:=",ExpressionUUID->"12f48f88-5db5-48cd-a7e8-ff1efe3bd31a"],
 
 Cell["With some hunting.  Population removed at a constant rate.", "Text",
  CellChangeTimes->{{3.603190577711314*^9, 3.603190580221397*^9}, {
@@ -110,7 +111,7 @@ Cell[BoxData[{
    RowBox[{"x", "[", "t", "]"}], ",", "t"}], "]"}]}], "Input",
  CellChangeTimes->{{3.6031905836*^9, 3.603190600197701*^9}, {
    3.60319063216894*^9, 3.603190642293302*^9}, 3.765101223960313*^9},
- CellLabel->"In[71]:=",ExpressionUUID->"8d75d4bb-123c-4cd3-929b-fecb6e031af6"],
+ CellLabel->"In[60]:=",ExpressionUUID->"8d75d4bb-123c-4cd3-929b-fecb6e031af6"],
 
 Cell["\<\
 Lotka-Volterra (The following code was written by Stephen Wilkerson.  See \
@@ -385,7 +386,7 @@ Cell[BoxData[
   3.603192319243847*^9, 3.603192322682889*^9}, {3.603192496097217*^9, 
   3.60319250649727*^9}, {3.733227564367936*^9, 3.733227577935392*^9}, {
   3.7651011131496897`*^9, 3.765101116762751*^9}},
- CellLabel->"In[63]:=",ExpressionUUID->"d98bdcb3-3525-4850-83f7-0ab73e5659c9"]
+ CellLabel->"In[64]:=",ExpressionUUID->"d98bdcb3-3525-4850-83f7-0ab73e5659c9"]
 },
 WindowSize->{1137, 1022},
 WindowMargins->{{201, Automatic}, {0, Automatic}},
@@ -407,11 +408,11 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[400, 13, 151, 3, 29, "Text",ExpressionUUID->"3f443468-0657-4a6c-b7ba-98b483bca87f"],
-Cell[554, 18, 1652, 50, 168, "Input",ExpressionUUID->"12f48f88-5db5-48cd-a7e8-ff1efe3bd31a"],
-Cell[2209, 70, 249, 4, 29, "Text",ExpressionUUID->"d58cc3a6-1ac5-4717-bf80-4fe2e0670b53"],
-Cell[2461, 76, 1290, 36, 105, "Input",ExpressionUUID->"8d75d4bb-123c-4cd3-929b-fecb6e031af6"],
-Cell[3754, 114, 375, 7, 29, "Text",ExpressionUUID->"9718a9a9-e6f4-4653-989c-8f0635fc26a8"],
-Cell[4132, 123, 9961, 264, 714, "Input",ExpressionUUID->"d98bdcb3-3525-4850-83f7-0ab73e5659c9"]
+Cell[554, 18, 1702, 51, 168, "Input",ExpressionUUID->"12f48f88-5db5-48cd-a7e8-ff1efe3bd31a"],
+Cell[2259, 71, 249, 4, 29, "Text",ExpressionUUID->"d58cc3a6-1ac5-4717-bf80-4fe2e0670b53"],
+Cell[2511, 77, 1290, 36, 105, "Input",ExpressionUUID->"8d75d4bb-123c-4cd3-929b-fecb6e031af6"],
+Cell[3804, 115, 375, 7, 29, "Text",ExpressionUUID->"9718a9a9-e6f4-4653-989c-8f0635fc26a8"],
+Cell[4182, 124, 9961, 264, 714, "Input",ExpressionUUID->"d98bdcb3-3525-4850-83f7-0ab73e5659c9"]
 }
 ]
 *)
